@@ -1,0 +1,42 @@
+{
+  "name": "geturl",
+  "version": "0.0.0",
+  "description": "a fork a requrl UnJs",
+  "keywords": [
+    "url",
+    "http",
+    "node"
+  ],
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "jiti playground/index.ts",
+    "build": "unbuild",
+    "lint": "eslint . --ext .ts"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "is-https": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.10.1",
+    "eslint": "8.54.0",
+    "eslint-config-unjs": "0.2.1",
+    "jiti": "1.21.0",
+    "typescript": "5.3.2",
+    "unbuild": "2.0.0"
+  }
+}
