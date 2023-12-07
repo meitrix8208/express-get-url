@@ -1,4 +1,3 @@
-
 import express from "express";
 import { getURL, getHost, getProtocol } from "../src";
 
@@ -9,9 +8,8 @@ app.get("/url", (req, res) => {
   res.json({
     protocol: getProtocol(req),
     host: getHost(req),
-    url: getURL(req, true),
-  }
-  );
+    url: getURL(req, { includePath: true }),
+  });
 });
 
 app.listen(3000, () => {

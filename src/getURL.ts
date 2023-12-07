@@ -4,13 +4,18 @@ import { getProtocol } from "./getProtocol";
 
 const _location =
   typeof location === "undefined" ? { origin: "", pathname: "/" } : location;
-export const getURL = (req: IncomingMessage, includePath?: boolean): string => {
+
+interface Options {
+  includePath?: boolean;
+}
+
+export const getURL = (req: IncomingMessage, options?: Options): string => {
   if (!req) {
-    return _location.origin + (includePath ? _location.pathname : "");
+    return _location.origin + (options?.includePath ? _location.pathname : "");
   }
   const protocol = getProtocol(req);
   const host = getHost(req);
-  const path = includePath ? req.url : "";
+  const path = options?.includePath ? req.url : "";
 
   return encodeURI((protocol + "://" + host + path).replace(/\/$/, ""));
 };
