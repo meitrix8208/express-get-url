@@ -2,11 +2,20 @@
   "name": "express-get-url",
   "version": "0.0.1",
   "description": "a fork a requrl UnJs",
+  "author": {
+    "name": "meitrix8208",
+    "email": "maurrod2001@outlook.com"
+  },
   "keywords": [
     "url",
     "http",
-    "node"
+    "node",
+    "express"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/meitrix8208/express-get-url.git"
+  },
   "type": "module",
   "files": [
     "dist"
@@ -25,7 +34,8 @@
   "scripts": {
     "dev": "jiti playground/index.ts",
     "build": "unbuild",
-    "lint": "eslint . --ext .ts"
+    "lint": "eslint . --ext .ts",
+    "release": "pnpm lint && pnpm build --minify && pnpm publish"
   },
   "license": "MIT",
   "dependencies": {
@@ -38,5 +48,7 @@
     "jiti": "1.21.0",
     "typescript": "5.3.2",
     "unbuild": "2.0.0"
-  }
+  },
+  "packageManager": "pnpm@8.11.0"
+
 }
