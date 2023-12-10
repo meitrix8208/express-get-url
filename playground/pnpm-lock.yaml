@@ -11,6 +11,9 @@ dependencies:
   express:
     specifier: 4.18.2
     version: 4.18.2
+  express-get-url:
+    specifier: 0.0.2
+    version: 0.0.2
   jiti:
     specifier: 1.21.0
     version: 1.21.0
@@ -203,6 +206,12 @@ packages:
     engines: {node: '>= 0.6'}
     dev: false
 
+  /express-get-url@0.0.2:
+    resolution: {integrity: sha512-YgyccEoOvGrLaGmQ7zZ5e56sP3KIded1W4C7y84P6OVOEKph5gGIT20gnGIXoyz2K4hVAHMkQ/ZKHx0FvC+Jmw==}
+    dependencies:
+      is-https: 4.0.0
+    dev: false
+
   /express@4.18.2:
     resolution: {integrity: sha512-5/PsL6iGPdfQ/lKM1UuielYgv3BUoJfz1aUwU9vHZ+J7gyvwdQXFEBIEIaxeGf0GIcreATNyBExtalisDbuMqQ==}
     engines: {node: '>= 0.10.0'}
@@ -334,6 +343,10 @@ packages:
   /ipaddr.js@1.9.1:
     resolution: {integrity: sha512-0KI/607xoxSToH7GjN1FfSbLoU0+btTicjsQSWQlh/hZykN8KpmMf7uYwPW3R+akZ6R/w18ZlXSHBYXiYUPO3g==}
     engines: {node: '>= 0.10'}
+    dev: false
+
+  /is-https@4.0.0:
+    resolution: {integrity: sha512-FeMLiqf8E5g6SdiVJsPcNZX8k4h2fBs1wp5Bb6uaNxn58ufK1axBqQZdmAQsqh0t9BuwFObybrdVJh6MKyPlyg==}
     dev: false
 
   /jiti@1.21.0:
