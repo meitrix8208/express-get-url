@@ -1,6 +1,6 @@
 {
   "name": "express-get-url",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "a fork a requrl UnJs",
   "author": {
     "name": "meitrix8208",
@@ -14,7 +14,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/meitrix8208/express-get-url.git"
+    "url": "git+https://github.com/meitrix8208/express-get-url.git"
   },
   "type": "module",
   "files": [
@@ -37,20 +37,18 @@
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "dev": "jiti playground/index.ts",
     "build": "unbuild",
     "lint": "eslint . --ext .ts",
     "release": "pnpm lint && pnpm build --minify && pnpm publish"
   },
   "license": "MIT",
   "dependencies": {
-    "is-https": "^4.0.0"
+    "express-get-is-https": "0.0.2"
   },
   "devDependencies": {
     "@types/node": "20.10.1",
     "eslint": "8.54.0",
     "eslint-config-unjs": "0.2.1",
-    "jiti": "1.21.0",
     "typescript": "5.3.2",
     "unbuild": "2.0.0"
   },

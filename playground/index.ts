@@ -1,5 +1,5 @@
 import express from "express";
-import { getURL, getHost, getProtocol } from "express-get-url";
+import { getURL, getHost, getProtocol } from "../dist/index";
 
 const app = express();
 app.use(express.json());
